@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  alamo_coding_challenge
+
+  Created by Cameron Eubank on 6/15/20.
+  Copyright © 2020 Cameron Eubank. All rights reserved.
+*/
+
+"search.instruction" = "Busque una palabra clave";
+"places" = "Lugares";
+"no.search.results" = "¡Uy! No pudimos encontrar ningún resultado de búsqueda para \"%@\"";
+"generic.error" = "¡Uy! ¡Algo salió mal! Inténtalo de nuevo.";
+"cancel" = "Cancelar";
+"directions.applemaps" = "Obtener direcciones en Apple Maps";
+"directions.openstreetmap" = "Obtener direcciones en Open Street Maps";

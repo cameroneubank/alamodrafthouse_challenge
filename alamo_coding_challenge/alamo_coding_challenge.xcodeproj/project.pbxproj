@@ -25,6 +25,7 @@
 		4CF067E624982C8A00E6ABD8 /* PlacesResponseStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CF067E524982C8A00E6ABD8 /* PlacesResponseStub.json */; };
 		4CF067E9249830E700E6ABD8 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF067E8249830E700E6ABD8 /* MockURLProtocol.swift */; };
 		4CF067EC2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CF067EB2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json */; };
+		4CF067F12498351600E6ABD8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF067F32498351600E6ABD8 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		4CF067E524982C8A00E6ABD8 /* PlacesResponseStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlacesResponseStub.json; sourceTree = "<group>"; };
 		4CF067E8249830E700E6ABD8 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		4CF067EB2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NonDecodablePlacesResponseStub.json; sourceTree = "<group>"; };
+		4CF067F22498351600E6ABD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CF067F6249836CC00E6ABD8 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 				4C3F639E2497E61B00478235 /* Assets.xcassets */,
 				4C3F63A02497E61B00478235 /* LaunchScreen.storyboard */,
 				4C3F63A32497E61B00478235 /* Info.plist */,
+				4CF067F32498351600E6ABD8 /* Localizable.strings */,
 			);
 			path = alamo_coding_challenge;
 			sourceTree = "<group>";
@@ -252,6 +256,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-MX",
 			);
 			mainGroup = 4C3F63892497E61500478235;
 			productRefGroup = 4C3F63932497E61500478235 /* Products */;
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3F63A22497E61B00478235 /* LaunchScreen.storyboard in Resources */,
+				4CF067F12498351600E6ABD8 /* Localizable.strings in Resources */,
 				4C3F639F2497E61B00478235 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +339,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		4CF067F32498351600E6ABD8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF067F22498351600E6ABD8 /* en */,
+				4CF067F6249836CC00E6ABD8 /* es-MX */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -340,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -400,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

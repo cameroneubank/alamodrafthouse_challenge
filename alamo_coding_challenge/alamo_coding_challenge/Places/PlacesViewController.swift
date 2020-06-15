@@ -56,7 +56,7 @@ final class PlacesViewController: UIViewController {
         controller.searchResultsUpdater = self
         controller.searchBar.returnKeyType = .done
         controller.obscuresBackgroundDuringPresentation = false
-        controller.searchBar.placeholder = NSLocalizedString("search.intruction",
+        controller.searchBar.placeholder = NSLocalizedString("search.instruction",
                                                              value: "Search for a keyword",
                                                              comment: "Instructs the user to search for places using a keyword.")
         return controller

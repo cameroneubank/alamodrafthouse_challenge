@@ -24,6 +24,7 @@ struct PlacesNetworkingController {
     private enum QueryItemKey: String {
         case query = "q" // The key of the query parameter for the "query". The value will be a `String` keyword.
         case apiKey = "key" // The key of the query parameter for the API key.
+        case language
     }
     
     // MARK: - Initialization
@@ -97,14 +98,14 @@ struct PlacesNetworkingController {
         
         urlComponents.queryItems = [
             URLQueryItem(name: QueryItemKey.query.rawValue, value: keyword),
-            URLQueryItem(name: QueryItemKey.apiKey.rawValue, value: APIConstant.key)
+            URLQueryItem(name: QueryItemKey.apiKey.rawValue, value: APIConstant.key),
+            URLQueryItem(name: QueryItemKey.language.rawValue, value: Locale.current.languageCode)
         ]
         
         guard let url = urlComponents.url else {
             throw PlacesNetworkingControllerError.invalidUrl
         }
         
-        // https://api.opencagedata.com/geocode/v1/json?q=PLACENAME&key=f1aa9576517049738b2411404c71c6ca
         return url
     }
 }
