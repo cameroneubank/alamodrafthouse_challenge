@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3F63962497E61500478235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63952497E61500478235 /* AppDelegate.swift */; };
+		4C3F63982497E61500478235 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63972497E61500478235 /* SceneDelegate.swift */; };
+		4C3F639F2497E61B00478235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F639E2497E61B00478235 /* Assets.xcassets */; };
+		4C3F63A22497E61B00478235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F63A02497E61B00478235 /* LaunchScreen.storyboard */; };
+		4C3F63AD2497E61B00478235 /* alamo_coding_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63AC2497E61B00478235 /* alamo_coding_challengeTests.swift */; };
+		4C3F63B82497E70100478235 /* PlacesNetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63B72497E70100478235 /* PlacesNetworkingController.swift */; };
+		4C3F63BB2497ECF400478235 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63BA2497ECF400478235 /* Place.swift */; };
+		4C3F63BD2497ECFA00478235 /* PlaceCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63BC2497ECFA00478235 /* PlaceCoordinate.swift */; };
+		4C3F63C02497ED7C00478235 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63BF2497ED7C00478235 /* PlacesViewController.swift */; };
+		4C3F63C22497EF0C00478235 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63C12497EF0C00478235 /* PlaceDetailViewController.swift */; };
+		4C3F63C62497FF9400478235 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63C52497FF9400478235 /* PlaceTableViewCell.swift */; };
+		4C3F63CA2498004200478235 /* PlacesBadSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63C92498004200478235 /* PlacesBadSearchResultsView.swift */; };
+		4C3F63CC249806FD00478235 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63CB249806FD00478235 /* UIStackView+.swift */; };
+		4C3F63CE2498125D00478235 /* PlaceAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63CD2498125D00478235 /* PlaceAnnotations.swift */; };
+		4C3F63D02498134E00478235 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63CF2498134E00478235 /* PlaceAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C3F63A92497E61B00478235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3F638A2497E61500478235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3F63912497E61500478235;
+			remoteInfo = alamo_coding_challenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C3F63922497E61500478235 /* alamo_coding_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alamo_coding_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3F63952497E61500478235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C3F63972497E61500478235 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C3F639E2497E61B00478235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C3F63A12497E61B00478235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C3F63A32497E61B00478235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3F63A82497E61B00478235 /* alamo_coding_challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alamo_coding_challengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3F63AC2497E61B00478235 /* alamo_coding_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alamo_coding_challengeTests.swift; sourceTree = "<group>"; };
+		4C3F63AE2497E61B00478235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3F63B72497E70100478235 /* PlacesNetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesNetworkingController.swift; sourceTree = "<group>"; };
+		4C3F63BA2497ECF400478235 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4C3F63BC2497ECFA00478235 /* PlaceCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCoordinate.swift; sourceTree = "<group>"; };
+		4C3F63BF2497ED7C00478235 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		4C3F63C12497EF0C00478235 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		4C3F63C52497FF9400478235 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		4C3F63C92498004200478235 /* PlacesBadSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesBadSearchResultsView.swift; sourceTree = "<group>"; };
+		4C3F63CB249806FD00478235 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		4C3F63CD2498125D00478235 /* PlaceAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotations.swift; sourceTree = "<group>"; };
+		4C3F63CF2498134E00478235 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C3F638F2497E61500478235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3F63A52497E61B00478235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C3F63892497E61500478235 = {
+			isa = PBXGroup;
+			children = (
+				4C3F63942497E61500478235 /* alamo_coding_challenge */,
+				4C3F63AB2497E61B00478235 /* alamo_coding_challengeTests */,
+				4C3F63932497E61500478235 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C3F63932497E61500478235 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63922497E61500478235 /* alamo_coding_challenge.app */,
+				4C3F63A82497E61B00478235 /* alamo_coding_challengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C3F63942497E61500478235 /* alamo_coding_challenge */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63952497E61500478235 /* AppDelegate.swift */,
+				4C3F63972497E61500478235 /* SceneDelegate.swift */,
+				4C3F63CB249806FD00478235 /* UIStackView+.swift */,
+				4C3F63C42497FF8900478235 /* Places */,
+				4C3F63C32497FF6600478235 /* Place Details */,
+				4C3F63B92497ECEA00478235 /* Networking */,
+				4C3F639E2497E61B00478235 /* Assets.xcassets */,
+				4C3F63A02497E61B00478235 /* LaunchScreen.storyboard */,
+				4C3F63A32497E61B00478235 /* Info.plist */,
+			);
+			path = alamo_coding_challenge;
+			sourceTree = "<group>";
+		};
+		4C3F63AB2497E61B00478235 /* alamo_coding_challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63AC2497E61B00478235 /* alamo_coding_challengeTests.swift */,
+				4C3F63AE2497E61B00478235 /* Info.plist */,
+			);
+			path = alamo_coding_challengeTests;
+			sourceTree = "<group>";
+		};
+		4C3F63B92497ECEA00478235 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63B72497E70100478235 /* PlacesNetworkingController.swift */,
+				4C3F63BE2497ED0D00478235 /* DTO */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4C3F63BE2497ED0D00478235 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63BA2497ECF400478235 /* Place.swift */,
+				4C3F63CD2498125D00478235 /* PlaceAnnotations.swift */,
+				4C3F63BC2497ECFA00478235 /* PlaceCoordinate.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		4C3F63C32497FF6600478235 /* Place Details */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63C12497EF0C00478235 /* PlaceDetailViewController.swift */,
+				4C3F63CF2498134E00478235 /* PlaceAnnotation.swift */,
+			);
+			path = "Place Details";
+			sourceTree = "<group>";
+		};
+		4C3F63C42497FF8900478235 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63BF2497ED7C00478235 /* PlacesViewController.swift */,
+				4C3F63C52497FF9400478235 /* PlaceTableViewCell.swift */,
+				4C3F63C92498004200478235 /* PlacesBadSearchResultsView.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C3F63912497E61500478235 /* alamo_coding_challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3F63B12497E61B00478235 /* Build configuration list for PBXNativeTarget "alamo_coding_challenge" */;
+			buildPhases = (
+				4C3F638E2497E61500478235 /* Sources */,
+				4C3F638F2497E61500478235 /* Frameworks */,
+				4C3F63902497E61500478235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = alamo_coding_challenge;
+			productName = alamo_coding_challenge;
+			productReference = 4C3F63922497E61500478235 /* alamo_coding_challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C3F63A72497E61B00478235 /* alamo_coding_challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3F63B42497E61B00478235 /* Build configuration list for PBXNativeTarget "alamo_coding_challengeTests" */;
+			buildPhases = (
+				4C3F63A42497E61B00478235 /* Sources */,
+				4C3F63A52497E61B00478235 /* Frameworks */,
+				4C3F63A62497E61B00478235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3F63AA2497E61B00478235 /* PBXTargetDependency */,
+			);
+			name = alamo_coding_challengeTests;
+			productName = alamo_coding_challengeTests;
+			productReference = 4C3F63A82497E61B00478235 /* alamo_coding_challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C3F638A2497E61500478235 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Cameron Eubank";
+				TargetAttributes = {
+					4C3F63912497E61500478235 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					4C3F63A72497E61B00478235 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 4C3F63912497E61500478235;
+					};
+				};
+			};
+			buildConfigurationList = 4C3F638D2497E61500478235 /* Build configuration list for PBXProject "alamo_coding_challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C3F63892497E61500478235;
+			productRefGroup = 4C3F63932497E61500478235 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C3F63912497E61500478235 /* alamo_coding_challenge */,
+				4C3F63A72497E61B00478235 /* alamo_coding_challengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C3F63902497E61500478235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3F63A22497E61B00478235 /* LaunchScreen.storyboard in Resources */,
+				4C3F639F2497E61B00478235 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3F63A62497E61B00478235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C3F638E2497E61500478235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3F63C02497ED7C00478235 /* PlacesViewController.swift in Sources */,
+				4C3F63962497E61500478235 /* AppDelegate.swift in Sources */,
+				4C3F63C22497EF0C00478235 /* PlaceDetailViewController.swift in Sources */,
+				4C3F63C62497FF9400478235 /* PlaceTableViewCell.swift in Sources */,
+				4C3F63D02498134E00478235 /* PlaceAnnotation.swift in Sources */,
+				4C3F63CE2498125D00478235 /* PlaceAnnotations.swift in Sources */,
+				4C3F63B82497E70100478235 /* PlacesNetworkingController.swift in Sources */,
+				4C3F63BD2497ECFA00478235 /* PlaceCoordinate.swift in Sources */,
+				4C3F63CA2498004200478235 /* PlacesBadSearchResultsView.swift in Sources */,
+				4C3F63CC249806FD00478235 /* UIStackView+.swift in Sources */,
+				4C3F63982497E61500478235 /* SceneDelegate.swift in Sources */,
+				4C3F63BB2497ECF400478235 /* Place.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3F63A42497E61B00478235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3F63AD2497E61B00478235 /* alamo_coding_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C3F63AA2497E61B00478235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3F63912497E61500478235 /* alamo_coding_challenge */;
+			targetProxy = 4C3F63A92497E61B00478235 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C3F63A02497E61B00478235 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3F63A12497E61B00478235 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C3F63AF2497E61B00478235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C3F63B02497E61B00478235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C3F63B22497E61B00478235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GUKR24R2M;
+				INFOPLIST_FILE = alamo_coding_challenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cameron.eubank.alamo-coding-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C3F63B32497E61B00478235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GUKR24R2M;
+				INFOPLIST_FILE = alamo_coding_challenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cameron.eubank.alamo-coding-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C3F63B52497E61B00478235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GUKR24R2M;
+				INFOPLIST_FILE = alamo_coding_challengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cameron.eubank.alamo-coding-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alamo_coding_challenge.app/alamo_coding_challenge";
+			};
+			name = Debug;
+		};
+		4C3F63B62497E61B00478235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GUKR24R2M;
+				INFOPLIST_FILE = alamo_coding_challengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cameron.eubank.alamo-coding-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/alamo_coding_challenge.app/alamo_coding_challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C3F638D2497E61500478235 /* Build configuration list for PBXProject "alamo_coding_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3F63AF2497E61B00478235 /* Debug */,
+				4C3F63B02497E61B00478235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3F63B12497E61B00478235 /* Build configuration list for PBXNativeTarget "alamo_coding_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3F63B22497E61B00478235 /* Debug */,
+				4C3F63B32497E61B00478235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3F63B42497E61B00478235 /* Build configuration list for PBXNativeTarget "alamo_coding_challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3F63B52497E61B00478235 /* Debug */,
+				4C3F63B62497E61B00478235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C3F638A2497E61500478235 /* Project object */;
+}
