@@ -14,11 +14,24 @@ enum PlacesNetworkingControllerError: Error {
     case missingResponseData
 }
 
-class PlacesNetworkingController {
+struct PlacesNetworkingController {
     
     private enum APIConstant {
         static let key: String = "f1aa9576517049738b2411404c71c6ca"
         static let url: String = "https://api.opencagedata.com/geocode/v1/json"
+    }
+    
+    private enum QueryItemKey: String {
+        case query = "q" // The key of the query parameter for the "query". The value will be a `String` keyword.
+        case apiKey = "key" // The key of the query parameter for the API key.
+    }
+    
+    // MARK: - Initialization
+    
+    private let urlSession: URLSession
+    
+    init(urlSession: URLSession = URLSession.shared) {
+        self.urlSession = urlSession
     }
     
     // MARK: - Public API
@@ -32,7 +45,7 @@ class PlacesNetworkingController {
         
         do {
             let url = try apiUrl(with: keyword)
-            URLSession.shared.dataTask(with: url) { data, response, error in
+            urlSession.dataTask(with: url) { data, response, error in
                 
                 // If we encounter an error, log the error and call completion with the error.
                 if let error = error {
@@ -83,8 +96,8 @@ class PlacesNetworkingController {
         }
         
         urlComponents.queryItems = [
-            URLQueryItem(name: "q", value: keyword),
-            URLQueryItem(name: "key", value: APIConstant.key)
+            URLQueryItem(name: QueryItemKey.query.rawValue, value: keyword),
+            URLQueryItem(name: QueryItemKey.apiKey.rawValue, value: APIConstant.key)
         ]
         
         guard let url = urlComponents.url else {

@@ -1,0 +1,973 @@
+{
+  "documentation": "https://opencagedata.com/api",
+  "licenses": [
+    {
+      "name": "see attribution guide",
+      "url": "https://opencagedata.com/credits"
+    }
+  ],
+  "rate": {
+    "limit": 2500,
+    "remaining": 2318,
+    "reset": 1592265600
+  },
+  "results": [
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "30° 21' 36.16740'' N",
+          "lng": "97° 44' 5.60112'' W"
+        },
+        "FIPS": {
+          "county": "48453",
+          "state": "48"
+        },
+        "MGRS": "14RPU2157959361",
+        "Maidenhead": "EM10di16tj",
+        "Mercator": {
+          "x": -10879798.098,
+          "y": 3528321.835
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?node=3196375766#map=16/30.36005/-97.73489",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/30.36005/-97.73489&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=30.36005&mlon=-97.73489#map=16/30.36005/-97.73489"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "9v6kxyzsh4bedwqdxph7",
+        "qibla": 43.48,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "West Anderson Lane",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592220600,
+            "astronomical": 1592214780,
+            "civil": 1592218920,
+            "nautical": 1592216940
+          },
+          "set": {
+            "apparent": 1592184840,
+            "astronomical": 1592190600,
+            "civil": 1592186460,
+            "nautical": 1592188500
+          }
+        },
+        "timezone": {
+          "name": "America/Chicago",
+          "now_in_dst": 1,
+          "offset_sec": -18000,
+          "offset_string": "-0500",
+          "short_name": "CDT"
+        },
+        "what3words": {
+          "words": "giggled.skills.hogs"
+        }
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 30.3600965,
+          "lng": -97.7348392
+        },
+        "southwest": {
+          "lat": 30.3599965,
+          "lng": -97.7349392
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "cinema",
+        "cinema": "Alamo Drafthouse",
+        "city": "Austin",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Travis County",
+        "house_number": "2700",
+        "neighbourhood": "North Shoal Creek",
+        "postcode": "78731:78759",
+        "road": "West Anderson Lane",
+        "state": "Texas",
+        "state_code": "TX"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, 2700 West Anderson Lane, Austin, TX 78731:78759, United States of America",
+      "geometry": {
+        "lat": 30.3600465,
+        "lng": -97.7348892
+      }
+    },
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "35° 46' 42.39804'' N",
+          "lng": "78° 36' 17.87652'' W"
+        },
+        "FIPS": {
+          "county": "37183",
+          "state": "37"
+        },
+        "MGRS": "17SQV1648162021",
+        "Maidenhead": "FM05qs76jt",
+        "Mercator": {
+          "x": -8750264.756,
+          "y": 4245195.888
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?way=47663101#map=16/35.77844/-78.60497",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/35.77844/-78.60497&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=35.77844&mlon=-78.60497#map=16/35.77844/-78.60497"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "dq25e338e936vh26dn77",
+        "qibla": 55.84,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "New Bern Avenue",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592215140,
+            "astronomical": 1592208600,
+            "civil": 1592213340,
+            "nautical": 1592211120
+          },
+          "set": {
+            "apparent": 1592181060,
+            "astronomical": 1592187600,
+            "civil": 1592182860,
+            "nautical": 1592185140
+          }
+        },
+        "timezone": {
+          "name": "America/New_York",
+          "now_in_dst": 1,
+          "offset_sec": -14400,
+          "offset_string": "-0400",
+          "short_name": "EDT"
+        },
+        "what3words": {
+          "words": "loves.mock.tricks"
+        },
+        "wikidata": "Q78920280"
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 35.7787365,
+          "lng": -78.6040338
+        },
+        "southwest": {
+          "lat": 35.7781354,
+          "lng": -78.6055729
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "cinema",
+        "cinema": "Alamo Drafthouse",
+        "city": "Raleigh",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Wake County",
+        "house_number": "2116",
+        "neighbourhood": "Longview Gardens",
+        "postcode": "27610",
+        "road": "New Bern Avenue",
+        "state": "North Carolina",
+        "state_code": "NC",
+        "suburb": "Southeast Raleigh"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, 2116 New Bern Avenue, Raleigh, NC 27610, United States of America",
+      "geometry": {
+        "lat": 35.7784439,
+        "lng": -78.6049657
+      }
+    },
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "33° 35' 45.92760'' N",
+          "lng": "101° 55' 34.71708'' W"
+        },
+        "FIPS": {
+          "county": "48303",
+          "state": "48"
+        },
+        "MGRS": "14SKC2844321212",
+        "Maidenhead": "DM93ao83ub",
+        "Mercator": {
+          "x": -11346384.96,
+          "y": 3951052.745
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?way=461296089#map=16/33.59609/-101.92631",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/33.59609/-101.92631&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=33.59609&mlon=-101.92631#map=16/33.59609/-101.92631"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "9tzx0egx2v63rgk2nduu",
+        "qibla": 39.11,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "West Loop 289",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592221080,
+            "astronomical": 1592214900,
+            "civil": 1592219340,
+            "nautical": 1592217240
+          },
+          "set": {
+            "apparent": 1592186340,
+            "astronomical": 1592192520,
+            "civil": 1592188080,
+            "nautical": 1592190180
+          }
+        },
+        "timezone": {
+          "name": "America/Chicago",
+          "now_in_dst": 1,
+          "offset_sec": -18000,
+          "offset_string": "-0500",
+          "short_name": "CDT"
+        },
+        "what3words": {
+          "words": "mailbox.spooned.emails"
+        },
+        "wikidata": "Q42298400"
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 33.5964481,
+          "lng": -101.925901
+        },
+        "southwest": {
+          "lat": 33.5957164,
+          "lng": -101.9267908
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "cinema",
+        "cinema": "Alamo Drafthouse",
+        "city": "Lubbock",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Lubbock County",
+        "house_number": "120",
+        "neighbourhood": "North By Northwest",
+        "postcode": "79416",
+        "road": "West Loop 289",
+        "state": "Texas",
+        "state_code": "TX"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, 120 West Loop 289, Lubbock, TX 79416, United States of America",
+      "geometry": {
+        "lat": 33.596091,
+        "lng": -101.9263103
+      }
+    },
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "39° 35' 1.45104'' N",
+          "lng": "105° 1' 29.43552'' W"
+        },
+        "FIPS": {
+          "county": "08005",
+          "state": "08"
+        },
+        "MGRS": "13SDD9786681557",
+        "Maidenhead": "DM79lo70ac",
+        "Mercator": {
+          "x": -11691312.063,
+          "y": 4778403.214
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?way=298031929#map=16/39.58374/-105.02484",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/39.58374/-105.02484&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=39.58374&mlon=-105.02484#map=16/39.58374/-105.02484"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "9xj34jgpzz2bv698wy0u",
+        "qibla": 34.96,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "South Santa Fe Drive",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592220780,
+            "astronomical": 1592213520,
+            "civil": 1592218860,
+            "nautical": 1592216400
+          },
+          "set": {
+            "apparent": 1592188080,
+            "astronomical": 1592195400,
+            "civil": 1592190060,
+            "nautical": 1592192520
+          }
+        },
+        "timezone": {
+          "name": "America/Denver",
+          "now_in_dst": 1,
+          "offset_sec": -21600,
+          "offset_string": "-0600",
+          "short_name": "MDT"
+        },
+        "what3words": {
+          "words": "take.vote.vets"
+        },
+        "wikidata": "Q42298357"
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 39.5840557,
+          "lng": -105.0245206
+        },
+        "southwest": {
+          "lat": 39.5833752,
+          "lng": -105.0252032
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "cinema",
+        "cinema": "Alamo Drafthouse",
+        "city": "Littleton",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Arapahoe County",
+        "hamlet": "Wolhurst",
+        "postcode": "80120",
+        "road": "South Santa Fe Drive",
+        "state": "Colorado",
+        "state_code": "CO"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, South Santa Fe Drive, Littleton, CO 80120, United States of America",
+      "geometry": {
+        "lat": 39.5837364,
+        "lng": -105.0248432
+      }
+    },
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "33° 14' 3.45912'' N",
+          "lng": "111° 50' 20.68152'' W"
+        },
+        "FIPS": {
+          "county": "04013",
+          "state": "04"
+        },
+        "MGRS": "12SVB2182377575",
+        "Maidenhead": "DM43bf96hf",
+        "Mercator": {
+          "x": -12449869.24,
+          "y": 3903027.292
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?way=550002221#map=16/33.23429/-111.83908",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/33.23429/-111.83908&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=33.23429&mlon=-111.83908#map=16/33.23429/-111.83908"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "9tbmp417b96zpd2mwwcd",
+        "qibla": 30.35,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "South Colorado Street",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592223540,
+            "astronomical": 1592217360,
+            "civil": 1592221800,
+            "nautical": 1592219700
+          },
+          "set": {
+            "apparent": 1592188620,
+            "astronomical": 1592194800,
+            "civil": 1592190360,
+            "nautical": 1592192460
+          }
+        },
+        "timezone": {
+          "name": "America/Phoenix",
+          "now_in_dst": 0,
+          "offset_sec": -25200,
+          "offset_string": "-0700",
+          "short_name": "MST"
+        },
+        "what3words": {
+          "words": "madder.silliness.calling"
+        },
+        "wikidata": "Q42298354"
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 33.2346277,
+          "lng": -111.8388243
+        },
+        "southwest": {
+          "lat": 33.2339643,
+          "lng": -111.8393336
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "cinema",
+        "cinema": "Alamo Drafthouse",
+        "city": "Chandler",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Maricopa County",
+        "neighbourhood": "Southshore Village",
+        "postcode": "85249",
+        "road": "South Colorado Street",
+        "state": "Arizona",
+        "state_code": "AZ"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, South Colorado Street, Chandler, AZ 85249, United States of America",
+      "geometry": {
+        "lat": 33.2342942,
+        "lng": -111.8390782
+      }
+    },
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "44° 56' 49.98480'' N",
+          "lng": "92° 55' 36.10740'' W"
+        },
+        "FIPS": {
+          "county": "27163",
+          "state": "27"
+        },
+        "MGRS": "15TWK0578277089",
+        "Maidenhead": "EN34mw87th",
+        "Mercator": {
+          "x": -10344552.532,
+          "y": 5583018.208
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?way=687322711#map=16/44.94722/-92.92670",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/44.94722/-92.92670&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=44.94722&mlon=-92.92670#map=16/44.94722/-92.92670"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "9zvztqkue08yy1b6ym8q",
+        "qibla": 44.12,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "Woodbury Lakes Road",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592216760,
+            "astronomical": 1592207640,
+            "civil": 1592214540,
+            "nautical": 1592211540
+          },
+          "set": {
+            "apparent": 1592186340,
+            "astronomical": 1592195460,
+            "civil": 1592188560,
+            "nautical": 1592191560
+          }
+        },
+        "timezone": {
+          "name": "America/Chicago",
+          "now_in_dst": 1,
+          "offset_sec": -18000,
+          "offset_string": "-0500",
+          "short_name": "CDT"
+        },
+        "what3words": {
+          "words": "lung.being.puppy"
+        },
+        "wikidata": "Q78221168"
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 44.9476137,
+          "lng": -92.9263705
+        },
+        "southwest": {
+          "lat": 44.9467928,
+          "lng": -92.927017
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "cinema",
+        "cinema": "Alamo Drafthouse",
+        "city": "Woodbury",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Washington County",
+        "postcode": "55125",
+        "road": "Woodbury Lakes Road",
+        "state": "Minnesota",
+        "state_code": "MN"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, Woodbury Lakes Road, Woodbury, MN 55125, United States of America",
+      "geometry": {
+        "lat": 44.947218,
+        "lng": -92.9266965
+      }
+    },
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "32° 56' 58.13592'' N",
+          "lng": "96° 44' 18.39048'' W"
+        },
+        "FIPS": {
+          "county": "48113",
+          "state": "48"
+        },
+        "MGRS": "14SQB1140847956",
+        "Maidenhead": "EM12pw17jv",
+        "Mercator": {
+          "x": -10768874.081,
+          "y": 3865361.903
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?node=2831834839#map=16/32.94948/-96.73844",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/32.94948/-96.73844&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=32.94948&mlon=-96.73844#map=16/32.94948/-96.73844"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "9vg5qwm0wutt7f1mvs0k",
+        "qibla": 43.51,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "Devonshire Drive",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592219940,
+            "astronomical": 1592213820,
+            "civil": 1592218260,
+            "nautical": 1592216160
+          },
+          "set": {
+            "apparent": 1592184960,
+            "astronomical": 1592191080,
+            "civil": 1592186700,
+            "nautical": 1592188800
+          }
+        },
+        "timezone": {
+          "name": "America/Chicago",
+          "now_in_dst": 1,
+          "offset_sec": -18000,
+          "offset_string": "-0500",
+          "short_name": "CDT"
+        },
+        "what3words": {
+          "words": "token.slurs.kicks"
+        },
+        "wikidata": "Q42298405"
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 32.9495322,
+          "lng": -96.7383918
+        },
+        "southwest": {
+          "lat": 32.9494322,
+          "lng": -96.7384918
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "cinema",
+        "cinema": "Alamo Drafthouse",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Dallas County",
+        "postcode": "75080",
+        "road": "Devonshire Drive",
+        "state": "Texas",
+        "state_code": "TX",
+        "town": "Richardson"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, Devonshire Drive, Richardson, TX 75080, United States of America",
+      "geometry": {
+        "lat": 32.9494822,
+        "lng": -96.7384418
+      }
+    },
+    {
+      "annotations": {
+        "DMS": {
+          "lat": "41° 10' 45.68484'' N",
+          "lng": "96° 6' 56.42352'' W"
+        },
+        "FIPS": {
+          "county": "31153",
+          "state": "31"
+        },
+        "MGRS": "14TQL4193162678",
+        "Maidenhead": "EN11we63cb",
+        "Mercator": {
+          "x": -10699547.798,
+          "y": 5010692.696
+        },
+        "OSM": {
+          "edit_url": "https://www.openstreetmap.org/edit?node=5700469959#map=16/41.17936/-96.11567",
+          "note_url": "https://www.openstreetmap.org/note/new#map=16/41.17936/-96.11567&layers=N",
+          "url": "https://www.openstreetmap.org/?mlat=41.17936&mlon=-96.11567#map=16/41.17936/-96.11567"
+        },
+        "UN_M49": {
+          "regions": {
+            "AMERICAS": "019",
+            "NORTHERN_AMERICA": "021",
+            "US": "840",
+            "WORLD": "001"
+          },
+          "statistical_groupings": [
+            "MEDC"
+          ]
+        },
+        "callingcode": 1,
+        "currency": {
+          "alternate_symbols": [
+            "US$"
+          ],
+          "decimal_mark": ".",
+          "disambiguate_symbol": "US$",
+          "html_entity": "$",
+          "iso_code": "USD",
+          "iso_numeric": "840",
+          "name": "United States Dollar",
+          "smallest_denomination": 1,
+          "subunit": "Cent",
+          "subunit_to_unit": 100,
+          "symbol": "$",
+          "symbol_first": 1,
+          "thousands_separator": ","
+        },
+        "flag": "🇺🇸",
+        "geohash": "9z7dkb6xnkx81mhuxnsz",
+        "qibla": 42.14,
+        "roadinfo": {
+          "drive_on": "right",
+          "road": "I 80",
+          "speed_in": "mph"
+        },
+        "sun": {
+          "rise": {
+            "apparent": 1592218320,
+            "astronomical": 1592210640,
+            "civil": 1592216340,
+            "nautical": 1592213760
+          },
+          "set": {
+            "apparent": 1592186280,
+            "astronomical": 1592193960,
+            "civil": 1592188320,
+            "nautical": 1592190900
+          }
+        },
+        "timezone": {
+          "name": "America/Chicago",
+          "now_in_dst": 1,
+          "offset_sec": -18000,
+          "offset_string": "-0500",
+          "short_name": "CDT"
+        },
+        "what3words": {
+          "words": "rugs.spinach.banana"
+        }
+      },
+      "bounds": {
+        "northeast": {
+          "lat": 41.1794069,
+          "lng": -96.1156232
+        },
+        "southwest": {
+          "lat": 41.1793069,
+          "lng": -96.1157232
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "US",
+        "ISO_3166-1_alpha-3": "USA",
+        "_category": "outdoors/recreation",
+        "_type": "theatre",
+        "continent": "North America",
+        "country": "United States of America",
+        "country_code": "us",
+        "county": "Sarpy County",
+        "postcode": "68138",
+        "road": "I 80",
+        "state": "Nebraska",
+        "state_code": "NE",
+        "suburb": "Portal",
+        "theatre": "Alamo Drafthouse"
+      },
+      "confidence": 9,
+      "formatted": "Alamo Drafthouse, I 80, Portal, NE 68138, United States of America",
+      "geometry": {
+        "lat": 41.1793569,
+        "lng": -96.1156732
+      }
+    }
+  ],
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "stay_informed": {
+    "blog": "https://blog.opencagedata.com",
+    "twitter": "https://twitter.com/OpenCage"
+  },
+  "thanks": "For using an OpenCage API",
+  "timestamp": {
+    "created_http": "Mon, 15 Jun 2020 22:23:30 GMT",
+    "created_unix": 1592259810
+  },
+  "total_results": 8
+}

@@ -13,6 +13,10 @@ import SafariServices
 
 final class PlaceDetailViewController: UIViewController {
     
+    private enum Constant {
+        static let metersThirtyMiles: Double = 48280
+    }
+    
     // MARK: - Subviews
     
     private lazy var mapView: MKMapView = {
@@ -67,6 +71,10 @@ final class PlaceDetailViewController: UIViewController {
     
     private func setupSubviews() {
         let annotation = PlaceAnnotation(place: place)
+        let region = MKCoordinateRegion(center: annotation.coordinate,
+                                        latitudinalMeters: Constant.metersThirtyMiles,
+                                        longitudinalMeters: Constant.metersThirtyMiles)
+        mapView.setRegion(mapView.regionThatFits(region), animated: false)
         mapView.addAnnotation(annotation)
     }
     

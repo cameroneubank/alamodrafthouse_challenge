@@ -11,7 +11,6 @@
 		4C3F63982497E61500478235 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63972497E61500478235 /* SceneDelegate.swift */; };
 		4C3F639F2497E61B00478235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F639E2497E61B00478235 /* Assets.xcassets */; };
 		4C3F63A22497E61B00478235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F63A02497E61B00478235 /* LaunchScreen.storyboard */; };
-		4C3F63AD2497E61B00478235 /* alamo_coding_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63AC2497E61B00478235 /* alamo_coding_challengeTests.swift */; };
 		4C3F63B82497E70100478235 /* PlacesNetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63B72497E70100478235 /* PlacesNetworkingController.swift */; };
 		4C3F63BB2497ECF400478235 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63BA2497ECF400478235 /* Place.swift */; };
 		4C3F63BD2497ECFA00478235 /* PlaceCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63BC2497ECFA00478235 /* PlaceCoordinate.swift */; };
@@ -22,6 +21,10 @@
 		4C3F63CC249806FD00478235 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63CB249806FD00478235 /* UIStackView+.swift */; };
 		4C3F63CE2498125D00478235 /* PlaceAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63CD2498125D00478235 /* PlaceAnnotations.swift */; };
 		4C3F63D02498134E00478235 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F63CF2498134E00478235 /* PlaceAnnotation.swift */; };
+		4C4E7E9F24981D6D0061C2BE /* PlacesNetworkingControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E7E9E24981D6D0061C2BE /* PlacesNetworkingControllerTests.swift */; };
+		4CF067E624982C8A00E6ABD8 /* PlacesResponseStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CF067E524982C8A00E6ABD8 /* PlacesResponseStub.json */; };
+		4CF067E9249830E700E6ABD8 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF067E8249830E700E6ABD8 /* MockURLProtocol.swift */; };
+		4CF067EC2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CF067EB2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,6 @@
 		4C3F63A12497E61B00478235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3F63A32497E61B00478235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C3F63A82497E61B00478235 /* alamo_coding_challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alamo_coding_challengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C3F63AC2497E61B00478235 /* alamo_coding_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alamo_coding_challengeTests.swift; sourceTree = "<group>"; };
 		4C3F63AE2497E61B00478235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C3F63B72497E70100478235 /* PlacesNetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesNetworkingController.swift; sourceTree = "<group>"; };
 		4C3F63BA2497ECF400478235 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -54,6 +56,10 @@
 		4C3F63CB249806FD00478235 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		4C3F63CD2498125D00478235 /* PlaceAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotations.swift; sourceTree = "<group>"; };
 		4C3F63CF2498134E00478235 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		4C4E7E9E24981D6D0061C2BE /* PlacesNetworkingControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesNetworkingControllerTests.swift; sourceTree = "<group>"; };
+		4CF067E524982C8A00E6ABD8 /* PlacesResponseStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PlacesResponseStub.json; sourceTree = "<group>"; };
+		4CF067E8249830E700E6ABD8 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		4CF067EB2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NonDecodablePlacesResponseStub.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +103,11 @@
 			children = (
 				4C3F63952497E61500478235 /* AppDelegate.swift */,
 				4C3F63972497E61500478235 /* SceneDelegate.swift */,
-				4C3F63CB249806FD00478235 /* UIStackView+.swift */,
+				4C4E7E9D24981D1F0061C2BE /* Helpers & Extensions */,
 				4C3F63C42497FF8900478235 /* Places */,
 				4C3F63C32497FF6600478235 /* Place Details */,
 				4C3F63B92497ECEA00478235 /* Networking */,
+				4C3F63BE2497ED0D00478235 /* DTO */,
 				4C3F639E2497E61B00478235 /* Assets.xcassets */,
 				4C3F63A02497E61B00478235 /* LaunchScreen.storyboard */,
 				4C3F63A32497E61B00478235 /* Info.plist */,
@@ -111,7 +118,9 @@
 		4C3F63AB2497E61B00478235 /* alamo_coding_challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C3F63AC2497E61B00478235 /* alamo_coding_challengeTests.swift */,
+				4C4E7E9E24981D6D0061C2BE /* PlacesNetworkingControllerTests.swift */,
+				4CF067EA249830F500E6ABD8 /* Shared */,
+				4CF067E724982CA900E6ABD8 /* Stubs */,
 				4C3F63AE2497E61B00478235 /* Info.plist */,
 			);
 			path = alamo_coding_challengeTests;
@@ -121,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				4C3F63B72497E70100478235 /* PlacesNetworkingController.swift */,
-				4C3F63BE2497ED0D00478235 /* DTO */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -153,6 +161,31 @@
 				4C3F63C92498004200478235 /* PlacesBadSearchResultsView.swift */,
 			);
 			path = Places;
+			sourceTree = "<group>";
+		};
+		4C4E7E9D24981D1F0061C2BE /* Helpers & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F63CB249806FD00478235 /* UIStackView+.swift */,
+			);
+			path = "Helpers & Extensions";
+			sourceTree = "<group>";
+		};
+		4CF067E724982CA900E6ABD8 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				4CF067E524982C8A00E6ABD8 /* PlacesResponseStub.json */,
+				4CF067EB2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		4CF067EA249830F500E6ABD8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4CF067E8249830E700E6ABD8 /* MockURLProtocol.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +278,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF067EC2498317C00E6ABD8 /* NonDecodablePlacesResponseStub.json in Resources */,
+				4CF067E624982C8A00E6ABD8 /* PlacesResponseStub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3F63AD2497E61B00478235 /* alamo_coding_challengeTests.swift in Sources */,
+				4C4E7E9F24981D6D0061C2BE /* PlacesNetworkingControllerTests.swift in Sources */,
+				4CF067E9249830E700E6ABD8 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
