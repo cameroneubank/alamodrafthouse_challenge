@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// `UITableViewCell` shown in `PlacesViewController` to represent a single `Place`.
 final class PlaceTableViewCell: UITableViewCell {
     
     // MARK: - Initialization
@@ -25,9 +26,8 @@ final class PlaceTableViewCell: UITableViewCell {
     
     private func commonInit() {
         accessoryType = .disclosureIndicator
-        // Dynamic Type
-        textLabel?.numberOfLines = 0
-        textLabel?.adjustsFontForContentSizeCategory = true
+        textLabel?.numberOfLines = 0 // Dynamic type support
+        textLabel?.adjustsFontForContentSizeCategory = true // Dynamic type support
     }
     
     // MARK: - UITableViewCell life cycle
@@ -39,6 +39,7 @@ final class PlaceTableViewCell: UITableViewCell {
     
     // MARK: - Public API
     
+    /// The `Place` object displayed by the cell.
     var place: Place? {
         didSet {
             textLabel?.text = place?.displayName

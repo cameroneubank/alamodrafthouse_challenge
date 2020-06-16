@@ -9,10 +9,12 @@
 import Foundation
 import UIKit
 
+/// `UIViewController` allowing the user to search for places around the world via a search bar.
 final class PlacesViewController: UIViewController {
     
     // MARK: - Subviews
     
+    /// The `UITableView` displaying the places searched for.
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(PlaceTableViewCell.self, forCellReuseIdentifier: String(describing: PlaceTableViewCell.self))
@@ -23,6 +25,7 @@ final class PlacesViewController: UIViewController {
         return tableView
     }()
     
+    /// The `UIView` shown while networking requests are in progress.
     private lazy var progressIndicatorContainerView: UIView = {
         let view = UIView()
         let indicator = UIActivityIndicatorView()
@@ -39,6 +42,7 @@ final class PlacesViewController: UIViewController {
         return view
     }()
     
+    /// The `PlacesBadSearchResultsView` shown when either a network error occurs, or when the search results are empty.
     private let badSearchResultsView: PlacesBadSearchResultsView = {
         let view = PlacesBadSearchResultsView()
         view.alpha = 0.0 // Initially hidden until `showBadSearchResultsViewIfNeeded()` is called.
@@ -49,8 +53,7 @@ final class PlacesViewController: UIViewController {
     
     // MARK: - Controllers
     
-    private let networkingController = PlacesNetworkingController()
-    
+    /// `UISearchController` allowing the user to search for places.
     private lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.searchResultsUpdater = self
@@ -64,10 +67,31 @@ final class PlacesViewController: UIViewController {
     
     // MARK: - Data source(s)
     
+    /// The collection of `Place` objects displayed by `tableView`.
     private var places = [Place]() {
         didSet {
             tableView.reloadData()
         }
+    }
+    
+    // MARK: - Initialization
+    
+    /// Instance of `PlacesNetworkingController` responsible for making network requests to the places API.
+    private let networkingController: PlacesNetworkingController
+    
+    /// MARK: - Initialize an instance of `PlacesViewController`.
+    ///
+    /// - parameter networkingController: Instance of `PlacesNetworkingController` responsbile for
+    ///                                   making networking requests to the places api.
+    ///                                   Default value is a vanilla `PlacesNetworkingController` instance.
+    ///
+    init(networkingController: PlacesNetworkingController = PlacesNetworkingController()) {
+        self.networkingController = networkingController
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        preconditionFailure("init(coder:) has not been implemented")
     }
     
     // MARK: - UIViewController life cycle
@@ -94,10 +118,12 @@ final class PlacesViewController: UIViewController {
     
     // MARK: - View utility
     
+    /// Adds subviews to the view hierarchy of `view`.
     private func addSubviews() {
         view.addSubview(tableView)
     }
     
+    /// Constrains subviews in view hierarchy of `view`.
     private func constrainSubviews() {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
@@ -107,14 +133,21 @@ final class PlacesViewController: UIViewController {
         ])
     }
     
+    /// Shows `progressIndicatorContainerView`.
     private func showProgressIndicator() {
         tableView.tableFooterView = progressIndicatorContainerView
     }
     
+    /// Hides `progressIndicatorContainerView`.
     private func hideProgressIndicator() {
         tableView.tableFooterView = UIView()
     }
     
+    /// Presents `badSearchResultsView` if necessary.
+    ///
+    /// - parameter configuration: The `PlacesBadSearchResultsView.DisplayConfiguration` whose values are displayed by
+    ///                            `badSearchResultsView`.
+    ///
     private func showBadSearchResultsViewIfNeeded(with configuration: PlacesBadSearchResultsView.DisplayConfiguration) {
         guard badSearchResultsView.superview == nil else { return }
         badSearchResultsView.configureMessage(with: configuration)
@@ -130,6 +163,7 @@ final class PlacesViewController: UIViewController {
         }
     }
     
+    /// Hides `badSearchResultsView` if necessary.
     private func hideBadSearchResultsViewIfNeeded() {
         guard badSearchResultsView.superview != nil else { return }
         UIView.animate(withDuration: 0.2, animations: { [weak self] in
@@ -141,6 +175,10 @@ final class PlacesViewController: UIViewController {
     
     // MARK: - Target-action
     
+    /// Performs the request to query for places for a given keyword.
+    ///
+    /// - parameter keyword: The `String` keyword used in the search for places.
+    ///
     @objc private func getPlaces(_ keyword: String) {
         showProgressIndicator()
         networkingController.getPlaces(keyword: keyword) { result in
@@ -169,6 +207,8 @@ extension PlacesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Ensure places has an object at `indexPath` and
+        // we can successfully dequeue the correct cell type from `tableView`.
         guard (0...places.count).contains(indexPath.row),
               let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PlaceTableViewCell.self)) as? PlaceTableViewCell
         else {
@@ -197,7 +237,7 @@ extension PlacesViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchInput = searchController.searchBar.text, !searchInput.isEmpty else {
-            // Clear any places displayed and remove `badSearchResultsView` if necessary.
+            // Clear any places displayed and hide `badSearchResultsView` if necessary.
             places.removeAll()
             hideBadSearchResultsViewIfNeeded()
             return

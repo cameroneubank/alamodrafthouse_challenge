@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 
+/// The entity which represents the `Place` in a coordinate space.
 struct PlaceCoordinate: Decodable {
     let lat: Double
     let lng: Double
@@ -16,6 +17,7 @@ struct PlaceCoordinate: Decodable {
 
 extension PlaceCoordinate {
     
+    /// The MapKit friendly representation of `PlaceCoordinate`, `CLLocationCoordinate2D`.
     var mapKitCoordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: lat,
                                       longitude: lng)

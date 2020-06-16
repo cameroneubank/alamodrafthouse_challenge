@@ -8,7 +8,10 @@
 
 import Foundation
 
+/// The entity which represents the different annotations of a `Place` object.
 struct PlaceAnnotations: Decodable {
+    
+    /// The optional `PlaceOpenStreetMapAnnotations` of the place.
     let openStreetMap: PlaceOpenStreetMapAnnotations?
     
     enum CodingKeys: String, CodingKey {
@@ -21,6 +24,9 @@ struct PlaceAnnotations: Decodable {
     }
 }
 
+/// The entity representing an annotation of a `Place` object in OpenStreetMaps.
 struct PlaceOpenStreetMapAnnotations: Decodable {
+    
+    /// The optional `URL` of the annotation in OpenStreetMaps.
     let url: URL?
 }

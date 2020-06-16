@@ -8,9 +8,14 @@
 
 import Foundation
 
+/// The object representing an entity provided by the opencagedata geocode API.
 struct Place: Decodable {
+    
+    /// The `String` display name of the place.
     let displayName: String
+    /// The `PlaceCoordinate` of the place.
     let coordinate: PlaceCoordinate
+    /// The different types of `PlaceAnnotations` of the place.
     let annotations: PlaceAnnotations
     
     enum CodingKeys: String, CodingKey {

@@ -9,12 +9,18 @@
 import Foundation
 import UIKit
 
+/// `UIView` informing the user that there was an issue when querying for places.
+/// Informs the user an error occured with the request, or there were no places found.
 final class PlacesBadSearchResultsView: UIView {
     
+    /// The object representing the use cases of the view.
     enum DisplayConfiguration {
+        /// There were no results found for the given `keyword`.
         case emptyResults(keyword: String)
+        /// There was an error with the request.
         case error
         
+        /// The `String` emoji capturing the spirit of the configuration.
         var emojiRepresentation: String {
             switch self {
             case .emptyResults:
@@ -27,12 +33,17 @@ final class PlacesBadSearchResultsView: UIView {
     
     // MARK: - Subviews
     
+    /// `UIScrollView` containing `contentStackView`.
+    ///
+    /// Allows for content to be scrolled if `contentStackView` exceeds the bounds of the scroll view.
+    ///
     private let contentScrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         return scrollView
     }()
     
+    /// `UIStackView` containing all scrollable content.
     private let contentStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -42,6 +53,7 @@ final class PlacesBadSearchResultsView: UIView {
         return stackView
     }()
     
+    /// `UILabel` displaying a message to the user.
     private let messageLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .title3)
@@ -52,6 +64,7 @@ final class PlacesBadSearchResultsView: UIView {
         return label
     }()
     
+    /// `UILabel` displaying an emoji to the user.
     private let emojiLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .title1)
@@ -79,12 +92,14 @@ final class PlacesBadSearchResultsView: UIView {
     
     // MARK: - View utility
     
+    /// Adds subviews to the view hierarchy.
     private func addSubviews() {
         contentStackView.addArrangedSubviews([messageLabel, emojiLabel])
         contentScrollView.addSubview(contentStackView)
         addSubview(contentScrollView)
     }
     
+    /// Constrains subviews in view hierarchy.
     private func constrainSubviews() {
         NSLayoutConstraint.activate([
             contentScrollView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
@@ -101,6 +116,10 @@ final class PlacesBadSearchResultsView: UIView {
     
     // MARK: - Public API
     
+    /// Configure the view with a given configuration.
+    ///
+    /// - parameter configuration: The instance of `DisplayConfiguration` whose properties are shown in the view.
+    ///
     func configureMessage(with configuration: DisplayConfiguration) {
         let errorMessage: String
         switch configuration {

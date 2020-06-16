@@ -10,6 +10,7 @@
 "places" = "Places";
 "no.search.results" = "Oops! We couldn't find any search results for \"%@\"";
 "generic.error" = "Oops! Something went wrong! Please try again.";
+"details" = "Details";
 "cancel" = "Cancel";
 "directions.applemaps" = "Get directions in Apple Maps";
 "directions.openstreetmap" = "Get directions in Open Street Maps";

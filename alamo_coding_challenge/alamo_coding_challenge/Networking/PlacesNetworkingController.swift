@@ -9,11 +9,16 @@
 import Foundation
 import os.log
 
+/// The `Error` types that may occur in `PlacesNetworkingController`.
 enum PlacesNetworkingControllerError: Error {
     case invalidUrl
     case missingResponseData
 }
 
+/// Object responsible for network requests and interactions to the places API.
+///
+/// https://opencagedata.com/api
+///
 struct PlacesNetworkingController {
     
     private enum APIConstant {
@@ -29,14 +34,25 @@ struct PlacesNetworkingController {
     
     // MARK: - Initialization
     
+    /// The instance of `URLSession` used to make requests with.
     private let urlSession: URLSession
     
+    /// Initialize an instance of `PlacesNetworkingController`.
+    ///
+    /// - parameter urlSession: The instance of `URLSession` that makes the requests.
+    ///                         The default value is `URLSession.shared`.
+    ///
     init(urlSession: URLSession = URLSession.shared) {
         self.urlSession = urlSession
     }
     
     // MARK: - Public API
     
+    /// Executes a request to fetch places for a given keyword.
+    ///
+    /// - parameter keyword: The `String` keyword provided with the request.
+    /// - parameter completion: The completion block providing a `Result` object called when the network request finishes.
+    ///
     func getPlaces(keyword: String, completion: @escaping (Result<[Place], Error>) -> Void) {
         
         /// Decodable object which wraps the array of `Place` objects we care about.
@@ -91,21 +107,28 @@ struct PlacesNetworkingController {
     
     // MARK: - Private
     
+    /// Returns the constructed `URL` object for a given keyword.
+    ///
+    /// - parameter keyword: The `String` keyword used in the request.
+    ///
     private func apiUrl(with keyword: String) throws -> URL {
+        
+        // Ensure we can construct a `URLComponents` object from the base URL of the API.
         guard var urlComponents = URLComponents(string: APIConstant.url) else {
             throw PlacesNetworkingControllerError.invalidUrl
         }
         
+        // Construct the URL with the necessary query items.
         urlComponents.queryItems = [
             URLQueryItem(name: QueryItemKey.query.rawValue, value: keyword),
             URLQueryItem(name: QueryItemKey.apiKey.rawValue, value: APIConstant.key),
             URLQueryItem(name: QueryItemKey.language.rawValue, value: Locale.current.languageCode)
         ]
         
+        // Try and return a URL from `urlComponents`.
         guard let url = urlComponents.url else {
             throw PlacesNetworkingControllerError.invalidUrl
         }
-        
         return url
     }
 }

@@ -11,6 +11,7 @@ import UIKit
 import MapKit
 import SafariServices
 
+/// `UIViewController` allowing a user to view the details for a given `Place`.
 final class PlaceDetailViewController: UIViewController {
     
     private enum Constant {
@@ -19,6 +20,7 @@ final class PlaceDetailViewController: UIViewController {
     
     // MARK: - Subviews
     
+    /// `MKMapView` displaying the coordinates of `place`.
     private lazy var mapView: MKMapView = {
         let mapView = MKMapView()
         mapView.delegate = self
@@ -28,8 +30,13 @@ final class PlaceDetailViewController: UIViewController {
     
     // MARK: - Initialization
     
+    /// The instance of `Place` whose coordinates are displayed by `mapView`.
     private let place: Place
     
+    /// Initialize an instance of `PlaceDetailViewController`.
+    ///
+    /// - parameter place: The instance of `Place` displayed.
+    ///
     init(place: Place) {
         self.place = place
         super.init(nibName: nil, bundle: nil)
@@ -43,7 +50,10 @@ final class PlaceDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupSubviews()
+        title = NSLocalizedString("details",
+                                  value: "Details",
+                                  comment: "Indicates the title of the feature.")
+        view.backgroundColor = .systemBackground
         addSubviews()
         constrainSubviews()
         setupSubviews()
@@ -51,15 +61,12 @@ final class PlaceDetailViewController: UIViewController {
     
     // MARK: - View utilty
     
-    private func setupView() {
-        title = place.displayName
-        view.backgroundColor = .systemBackground
-    }
-    
+    /// Adds subviews to the view hierarchy of `view`.
     private func addSubviews() {
         view.addSubview(mapView)
     }
     
+    /// Constrains subviews in view hierarchy of `view`.
     private func constrainSubviews() {
         NSLayoutConstraint.activate([
             mapView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -69,6 +76,7 @@ final class PlaceDetailViewController: UIViewController {
         ])
     }
     
+    /// Congigure the subviews in the view hierarchy of `view`.
     private func setupSubviews() {
         let annotation = PlaceAnnotation(place: place)
         let region = MKCoordinateRegion(center: annotation.coordinate,
@@ -78,6 +86,10 @@ final class PlaceDetailViewController: UIViewController {
         mapView.addAnnotation(annotation)
     }
     
+    /// Presents a `UIAlertController` whose style is actionSheet allowing the user to get directions to a given `Place`.
+    ///
+    /// - parameter place: The `Place` to provide directions for.
+    ///
     private func showMapsAlertSheet(with place: Place) {
         // Create the `UIAlertController` we'll present.
         let alertController = UIAlertController(title: nil,
