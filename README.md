@@ -1,8 +1,9 @@
 # alamodrafthouse_challenge
 Coding Challenge for Alamo Drafthouse
+![Overview](.github/overview.png)
 
 ### Requirements:
-- Xcode 11.5 or later0
+- Xcode 11.5 or later
 
 ### Getting Started:
 - Clone the repository
@@ -12,14 +13,15 @@ Coding Challenge for Alamo Drafthouse
 
 ### Features:
 - The `alamo_coding_challenge` application allows users to query and view places for a given keyword by leveraging the OpenCage Geocoding (API)[https://opencagedata.com/api]
-- Users can view the places retrieved in a list, view each place in a map, and get directions for a given place using Apple Maps are OpenStreetMap.
+- Users can view the places retrieved in a list, view each place on a map, and get directions for a given place using Apple Maps or OpenStreetMap.
 - Errors and empty search results from the query are handled appropriately in the UI.
-![Overview](.github/english.png)
+![Errors](.github/errors.png)
 
 ### Additional Functionality:
+- Unit tests for `PlacesNetworkingController`. Unit test coverage for this class is roughly 93%.
 - Support for Dark Mode
 ![Dark Mode](.github/dark_mode.png)
 - Support for Dynamic Type
 ![Dynamic Type](.github/dynamic_type.png)
-- i18n support for English (en_US) and Mexican Spanish (es_MX)
+- i18n support for Mexican Spanish (es_MX)
 ![es_MX](.github/spanish.png)
