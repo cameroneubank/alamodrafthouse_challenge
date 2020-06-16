@@ -89,8 +89,9 @@ final class PlaceDetailViewController: UIViewController {
     /// Presents a `UIAlertController` whose style is actionSheet allowing the user to get directions to a given `Place`.
     ///
     /// - parameter place: The `Place` to provide directions for.
+    /// - parameter sourceVice: The `UIView` to provide a source view for the presented `UIAlertController`.
     ///
-    private func showMapsAlertSheet(with place: Place) {
+    private func showMapsAlertSheet(with place: Place, sourceView: UIView) {
         // Create the `UIAlertController` we'll present.
         let alertController = UIAlertController(title: nil,
                                                 message: place.displayName,
@@ -130,6 +131,10 @@ final class PlaceDetailViewController: UIViewController {
         let cancelAction = UIAlertAction(title: cancelTitle, style: .cancel)
         alertController.addAction(cancelAction)
         
+        // iPad
+        alertController.popoverPresentationController?.sourceView = sourceView
+        alertController.popoverPresentationController?.sourceRect = sourceView.bounds
+        
         // Lastly, present `alertController`.
         present(alertController, animated: true, completion: nil)
     }
@@ -141,6 +146,6 @@ extension PlaceDetailViewController: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let annotation = view.annotation as? PlaceAnnotation else { return }
-        showMapsAlertSheet(with: annotation.place)
+        showMapsAlertSheet(with: annotation.place, sourceView: view)
     }
 }
